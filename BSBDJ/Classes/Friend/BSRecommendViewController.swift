@@ -37,6 +37,7 @@ extension BSRecommendViewController {
     
     fileprivate func setupUI() {
         title = "推荐关注"
+        categroyTableView.tableFooterView = UIView()
         categroyTableView.register(UINib.init(nibName: categroyCellId, bundle: nil), forCellReuseIdentifier: categroyCellId)
         userTableView.register(UINib.init(nibName: userCellId, bundle: nil), forCellReuseIdentifier: userCellId)
     }
